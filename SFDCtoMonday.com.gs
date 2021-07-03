@@ -13,7 +13,7 @@ function InsertRows2Monday()
   var querycreation2= "{\"text\":\""+accountid+"\"}";
   var querycreation3 = "){id}}";
   var jsonquery = JSON.stringify(querycreation2);
-  var cleanedquery = querycreation + jsonquery + querycreation3;
+  var cleanedquery = querycreation + jsonquery + querycreation3; // I also hate writing queries where you need to escape character so I broke it out in parts. Very lazy but update as you see fit.
   Logger.log("API: " + cleanedquery); // not necessary I just happened to like to see what was going into Monday.com in the logs
 
   var variables = {
